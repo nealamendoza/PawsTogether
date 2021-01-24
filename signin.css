@@ -47,6 +47,7 @@ li {
 
 li a:hover {
   background-color: #A4C7A2;
+  color: #F1EBD9;
 }
 
 
@@ -56,7 +57,7 @@ border: 5px solid #B19170;
 font-family: 'Baloo 2', cursive;
 color: #B19170;
 font-size: 25px;
-width: 20%;
+width: 30%;
 border-radius: 25px;
 /*align: center;*/
 margin: auto;
