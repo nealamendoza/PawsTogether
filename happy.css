@@ -87,4 +87,6 @@ margin: auto;
   font-family: 'Baloo 2', cursive;
   color: #B19170;
   border-radius: 7px;
+  border: none;
+  box-shadow: 2px 2px #B19170;
 }
