@@ -52,6 +52,12 @@
     <div align = "center" class ="account">
         <h3 class = "fieldsrequired">*Fields required</h3>
 
+    <script>
+        function messageCreateAccount(){
+            text = "Sorry, Create an Account is not available right now."
+            document.getElementById("message").innerHTML = text;
+        }
+    </script>
 
     <div align="center" class = "buttons">
         <input type="text" id="name" name="name"
@@ -60,7 +66,9 @@
             placeholder="Email address*"><br>
         <input type="text" id="password" name="password"
             placeholder="Password*"> <br>
-        <input type="button" class="pinkbutton" value="Enter">
+        <input type="button" class="pinkbutton"
+            onClick="messageCreateAccount()" value="Enter">
+        <p id="message"> <!-- script --> </p>
     </div>
 
     </div>

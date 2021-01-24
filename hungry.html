@@ -31,17 +31,8 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="adoptpage.html">Adopt a Dog</a></li>
 
-        <!-- Visit a Dog uses Javascript -->
-        <script>
-            var currentDate = new Date();
-            var minutes = currentDate.getMinutes();
-            if ((minutes%2)==0){
-                document.write("<li><a class=\"active\" href=\"hungry.html\">Visit a Dog</a></li>");
-            }
-            else{
-                document.write("<li><a class=\"active\" href=\"happy.html\">Visit a Dog</a></li>");
-            }
-        </script>
+        <!-- Only show hungry dog -->
+        <li><a class = "active" href="hungry.html">Visit a Dog</a></li>
 
         <!-- About -->
         <li><a href="aboutpage.html">About</a></li>

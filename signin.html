@@ -52,13 +52,21 @@
     <div align = "center" class ="signin">
         <h3 class = "fieldsrequired">*Fields required</h3>
 
+    <script>
+        function messageSignIn(){
+            text = "Sorry, Sign In is not available right now."
+            document.getElementById("message").innerHTML = text;
+        }
+    </script>
 
     <div align="center" class = "buttons">
         <input type="text" id="email" name="email"
             placeholder="Email address*">
         <input type="text" id="password" name="password"
             placeholder="Password*"> <br>
-        <input type="button" class="pinkbutton" value="Enter">
+        <input type="button" class="pinkbutton"
+            onClick="messageSignIn()" value="Enter">
+        <p id="message"> <!-- script --> </p>
     </div>
 
     </div>
