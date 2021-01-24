@@ -2,7 +2,7 @@ p{
   font-size: 25px;
   font-family: 'Baloo 2', cursive;
   color: #B19170;
-  margin-bottom = 25px;;
+  margin-bottom: 25px;;
 }
 
 .topright{
@@ -77,6 +77,6 @@ h1{
   -webkit-text-stroke-color: #F1EBD9;
   margin-top:5px;
   margin-bottom:5px;
-  text-align: center:
+  text-align: center;
   width: fit-content;
 }
