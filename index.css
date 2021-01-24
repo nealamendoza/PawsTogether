@@ -19,7 +19,8 @@ body{
 
 table{
   display: table;
-  border: 1px solid black;
+  text-align: center;
+  /*border: 1px solid black;*/
 }
 
 ul {
@@ -67,7 +68,7 @@ margin: auto;
   font-family: 'Baloo 2', cursive;
   color: #B19170;
   font-size: 25px;
-  width: 30%;
+  width: 50%;/*30%;*/
   border-radius: 25px;
   /*align: center;*/
   margin: auto;
