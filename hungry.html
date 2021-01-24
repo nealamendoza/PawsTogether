@@ -30,9 +30,12 @@
         <!-- Home and Adopt a Dog -->
         <li><a href="index.html">Home</a></li>
         <li><a href="adoptpage.html">Adopt a Dog</a></li>
+        <li><a class = "active" href="visitadog.html">Visit a Dog</a></li>
 
         <!-- Only show hungry dog -->
+        <!--
         <li><a class = "active" href="hungry.html">Visit a Dog</a></li>
+        -->
 
         <!-- About -->
         <li><a href="aboutpage.html">About</a></li>
@@ -48,12 +51,28 @@
         function redirectToHappy(){
             location.href = "happy.html";
         }
+
+        function updateDog(){
+        var currentDate = new Date();
+        var seconds = currentDate.getSeconds();
+        if ((seconds%2)==0){
+            location.href = "happy.html";
+        }
+        else{
+            location.href = "hungry.html";
+        }
+    }
     </script>
 
     <div align = "center" class = "buttons">
-        <button class = "pinkbutton" type="button"
-            onclick="redirectToHappy()">Feed Me</button>
+        <button class = "dumpling" type="button"
+            onclick="redirectToHappy()">
+            <img src = "images/dumpling.png" width = 30>
+            Feed Me
+            <img src = "images/dumpling.png" width = 30>
+        </button>
         <br>
+
         <span class = "sharing">Paw Code:&nbsp</span>
         <a class = "sharing" href = "index.html"><u>Paws01</u></a>
     </div>

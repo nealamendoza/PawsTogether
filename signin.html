@@ -30,8 +30,10 @@
         <!-- Home and Adopt a Dog -->
         <li><a href="index.html">Home</a></li>
         <li><a href="adoptpage.html">Adopt a Dog</a></li>
+        <li><a href="visitadog.html">Visit a Dog</a></li>
 
         <!-- Visit a Dog uses Javascript -->
+        <!--
         <script>
             var currentDate = new Date();
             var minutes = currentDate.getMinutes();
@@ -42,6 +44,7 @@
                 document.write("<li><a href=\"happy.html\">Visit a Dog</a></li>");
             }
         </script>
+        -->
 
         <!-- About -->
         <li><a href="aboutpage.html">About</a></li>
@@ -61,9 +64,9 @@
 
     <div align="center" class = "buttons">
         <input type="text" id="email" name="email"
-            placeholder="Email address*">
+            placeholder="Email address*"><br>
         <input type="text" id="password" name="password"
-            placeholder="Password*"> <br>
+            placeholder="Password*"><br>
         <input type="button" class="pinkbutton"
             onClick="messageSignIn()" value="Enter">
         <p id="message"> <!-- script --> </p>

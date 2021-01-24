@@ -59,7 +59,7 @@
         <h3>
             <a href="adoptpage.html">Adopt a dog</a>
             or <br>
-            enter a dog's Paw Code to visit it.
+            enter a Paw Code to visit a friend.
         </h3>
 
         <!-- Buttons -->
@@ -67,6 +67,13 @@
             placeholder="Enter a Paw Code...">
         <input type="submit" class="pinkbutton" value="Enter"
             onClick="redirectFromCode()">
+        
+        <p>
+            <input class = "pinkbutton" type = "button"
+                onclick = "redirectFromTime()"
+                value = "Click here">
+            to visit a stray dog. 
+        </p>
     </div>
 
     <script>
@@ -74,6 +81,17 @@
             var code = document.getElementById("link").value;
             var key = code.charAt(5);
             if((key%2==0)){
+                location.href = "happy.html";
+            }
+            else{
+                location.href = "hungry.html";
+            }
+        }
+
+        function redirectFromTime(){
+            var currentDate = new Date();
+            var value = currentDate.getSeconds();
+            if ((value%2)==0){
                 location.href = "happy.html";
             }
             else{
