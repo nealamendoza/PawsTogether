@@ -110,3 +110,11 @@ margin: auto;
   border: none;
   box-shadow: 2px 2px #B19170;
 }
+
+.sharing{
+  background-color: #CDEFE8;
+  font-size: 20px;
+  font-family: 'Baloo 2', cursive;
+  color: #B19170;
+  width: fit-content;
+}

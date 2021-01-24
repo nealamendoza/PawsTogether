@@ -53,10 +53,17 @@
         <img class = "circle" src = "images/happy_dog.png" width = "250">
     </div>
 
+    <script>
+        function redirectToHungry(){
+            location.href = "hungry.html";
+        }
+    </script>
+
     <div align = "center" class = "buttons">
         <label for="link">Dog's name:</label>
-        <input type="text" id="link" name="link">
-        <button class = "pinkbutton" type="button">Enter</button>
+        <input type="text" id="dogName" name="dogName">
+        <button class = "pinkbutton" type="submit"
+            onClick="redirectToHungry()">Enter</button>
 
     </div>
 
