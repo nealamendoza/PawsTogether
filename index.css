@@ -6,11 +6,16 @@ p{
 }
 
 .topright{
+  background-color: #CDEFE8;
   float: right;
   font-size: 25px;
   font-family: 'Baloo 2', cursive;
   color: #B19170;
   margin-bottom: 25px;
+}
+
+.active{
+  color: #A4C7A2;
 }
 
 body{
