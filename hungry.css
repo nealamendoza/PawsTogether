@@ -5,6 +5,12 @@ p{
   margin-bottom: 25px;;
 }
 
+span{
+  font-size: 25px;
+  font-family: 'Baloo 2', cursive;
+  color: #B19170;
+}
+
 .topright{
   background-color: #CDEFE8;
   float: right;
