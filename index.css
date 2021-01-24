@@ -2,11 +2,16 @@ p{
   font-size: 25px;
   font-family: 'Baloo 2', cursive;
   color: #B19170;
-  margin-bottom: 25px;;
+  margin-bottom: 25px;
 }
 
 body{
     background-image: url("images/bg.png");
+}
+
+table{
+  display: table;
+  border: 1px solid black;
 }
 
 ul {
@@ -48,24 +53,36 @@ border-radius: 25px;
 margin: auto;
 }
 
-.welcome1{
-width: 30%;
-margin: auto;
-}
-
-h1{
-  background-color: #CDEFE8;
-  font-size: 70px;
+.welcome{
+  background-color: #FFFBEF;
+  border: 3px solid #B19170;
   font-family: 'Baloo 2', cursive;
   color: #B19170;
-  text-shadow: 2px 2px #F1EBD9;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #F1EBD9;
-  margin-top:5px;
-  margin-bottom:5px;
-  text-align: center:
-  width: fit-content;
-}
+  font-size: 25px;
+  width: 30%;
+  border-radius: 25px;
+  /*align: center;*/
+  margin: auto;
+  }
+  
+  .welcome1{
+  width: 30%;
+  margin: auto;
+  }
+  
+  h1{
+    background-color: #CDEFE8;
+    font-size: 70px;
+    font-family: 'Baloo 2', cursive;
+    color: #B19170;
+    text-shadow: 2px 2px #F1EBD9;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #F1EBD9;
+    margin-top:5px;
+    margin-bottom:5px;
+    text-align: center:
+    width: fit-content;
+  }
 
 .buttons{
   background-color: #CDEFE8;
