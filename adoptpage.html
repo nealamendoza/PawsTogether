@@ -55,6 +55,9 @@
 
     <script>
         function redirectToHungry(){
+            var dogName = document.getElementById("dogName").value;
+            var message = "Now visiting " + dogName + ", your dog.";
+            alert(message);
             location.href = "hungry.html";
         }
     </script>
@@ -64,7 +67,6 @@
         <input type="text" id="dogName" name="dogName">
         <button class = "pinkbutton" type="submit"
             onClick="redirectToHungry()">Enter</button>
-
     </div>
 
 </body>
