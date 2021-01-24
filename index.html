@@ -31,7 +31,9 @@
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="adoptpage.html">Adopt a Dog</a></li>
 
+        <li><a href="visitadog.html">Visit a Dog</a></li>
         <!-- Visit a Dog uses Javascript -->
+        <!--
         <script>
             var currentDate = new Date();
             var value = currentDate.getSeconds();
@@ -42,6 +44,7 @@
                 document.write("<li><a href=\"happy.html\">Visit a Dog</a></li>");
             }
         </script>
+        -->
 
         <!-- About -->
         <li><a href="aboutpage.html">About</a></li>
@@ -56,8 +59,13 @@
         <table>
             <tr>
                 <td><img src = "images/corgi_happy.png" width = "200"></td>
-                <td><h3><a href="createanaccount.html">Create an account</a>
-                <br> or visit a friend’s dog <br> by entering their Share Code!</h3></td>
+                <td>
+                    <h3>
+                        <!--<a href="createanaccount.html">Create an account</a>-->
+                        <a href="adoptpage.html">Adopt a dog</a>
+                        <br> or visit a friend’s dog <br> by entering their <br> Paw Code!
+                    </h3>
+                </td>
             </tr>
         </table>
     </div>
@@ -65,8 +73,7 @@
     <script>
         function redirectFromCode(){
             var code = document.getElementById("link").value;
-            var key = code.charAt(13);
-            alert(key);
+            var key = code.charAt(5);
             if((key%2==0)){
                 location.href = "happy.html";
             }
@@ -79,7 +86,7 @@
     <!-- Buttons -->
     <div align="center" class = "buttons">
         <input type="text" id="link" name="link"
-            placeholder="Enter a Share Code...">
+            placeholder="Enter a Paw Code...">
         <input type="submit" class="pinkbutton" value="Enter"
             onClick="redirectFromCode()">
     </div>

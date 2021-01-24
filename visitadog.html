@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="createanaccount.css">
+    <link rel="stylesheet" type="text/css" href="visitadog.css">
     <!--<script> src="index.js" </script>-->
 
     <!-- Font: Baloo 2 -->
@@ -30,49 +30,57 @@
         <!-- Home and Adopt a Dog -->
         <li><a href="index.html">Home</a></li>
         <li><a href="adoptpage.html">Adopt a Dog</a></li>
+        <li><a class="active" href="visitadog.html">Visit a Dog</a></li>
 
         <!-- Visit a Dog uses Javascript -->
+        <!--
         <script>
             var currentDate = new Date();
-            var seconds = currentDate.getSeconds();
-            if ((seconds%2)==0){
+            var value = currentDate.getSeconds();
+            if ((value%2)==0){
                 document.write("<li><a href=\"hungry.html\">Visit a Dog</a></li>");
             }
             else{
                 document.write("<li><a href=\"happy.html\">Visit a Dog</a></li>");
             }
         </script>
+        -->
 
         <!-- About -->
         <li><a href="aboutpage.html">About</a></li>
     </ul>
     </div>
 
-    <div class = "createanaccount"> <h1 align = "center"><b>Create an Account</b></h1> </div>
-    <div align = "center" class ="account">
-        <h3 class = "fieldsrequired">*Fields required</h3>
+    <!-- Page Title -->
+    <div class = "visit1"> <h1 align="center"><b>Visit a Dog</b></h1></div>
+
+    <!-- Content -->
+    <div align = "center" class ="visit">
+        <h3>
+            <a href="adoptpage.html">Adopt a dog</a>
+            or <br>
+            enter a dog's Paw Code to visit it.
+        </h3>
+
+        <!-- Buttons -->
+        <input type="text" id="link" name="link"
+            placeholder="Enter a Paw Code...">
+        <input type="submit" class="pinkbutton" value="Enter"
+            onClick="redirectFromCode()">
+    </div>
 
     <script>
-        function messageCreateAccount(){
-            text = "Sorry, Create an Account is not available right now."
-            document.getElementById("message").innerHTML = text;
+        function redirectFromCode(){
+            var code = document.getElementById("link").value;
+            var key = code.charAt(5);
+            if((key%2==0)){
+                location.href = "happy.html";
+            }
+            else{
+                location.href = "hungry.html";
+            }
         }
     </script>
-
-    <div align="center" class = "buttons">
-        <input type="text" id="name" name="name"
-            placeholder="Name*"><br>
-        <input type="text" id="email" name="email"
-            placeholder="Email address*"><br>
-        <input type="text" id="password" name="password"
-            placeholder="Password*"> <br>
-        <input type="button" class="pinkbutton"
-            onClick="messageCreateAccount()" value="Enter">
-        <p id="message"> <!-- script --> </p>
-    </div>
-
-    </div>
-
 
 </body>
 </html>

@@ -1,0 +1,123 @@
+p{
+    font-size: 25px;
+    font-family: 'Baloo 2', cursive;
+    color: #B19170;
+    margin-bottom: 25px;
+  }
+  
+  .topright{
+    background-color: #CDEFE8;
+    float: right;
+    font-size: 25px;
+    font-family: 'Baloo 2', cursive;
+    color: #B19170;
+    margin-bottom: 25px;
+  }
+  
+  .active{
+    color: #A4C7A2;
+  }
+  
+  a:hover {
+    color: #A4C7A2;
+  }
+  
+  body{
+      background-image: url("images/bg.png");
+  }
+  
+  table{
+    display: table;
+    text-align: center;
+    /*border: 1px solid black;*/
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F7C3B4;
+  }
+  
+  li a {
+    /*display: block;*/
+    color: #B19170;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Baloo 2', cursive;
+    font-size: 30px;
+  }
+  
+  
+  li {
+    display: inline;
+  }
+  
+  li a:hover {
+    background-color: #A4C7A2;
+    color: #F1EBD9;
+  }
+  
+  .visit{
+    background-color: #FFFBEF;
+    border: 5px solid #B19170;
+    font-family: 'Baloo 2', cursive;
+    color: #B19170;
+    font-size: 25px;
+    width: 50%;
+    border-radius: 25px;
+    /*align: center;*/
+    margin: auto;
+  }
+  
+  .visit1{
+    width: fit-content;
+    margin: auto;
+  }
+  
+  h1{
+    background-color: #CDEFE8;
+    font-size: 70px;
+    font-family: 'Baloo 2', cursive;
+    color: #B19170;
+    text-shadow: 2px 2px #F1EBD9;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #F1EBD9;
+    margin-top:5px;
+    margin-bottom:5px;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .buttons{
+    font-size: 25px;
+    font-family: 'Baloo 2', cursive;
+    color: #B19170;
+    width: fit-content;
+    margin: auto;
+  }
+  
+  
+  .pinkbutton {
+    background-color: #F7C3B4;
+    font-family: 'Baloo 2', cursive;
+    color: #B19170;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 2px 2px #B19170;
+  }
+  
+  input[type=text]{
+    font-family: 'Baloo 2', cursive;
+    color: #B19170;
+    background-color: #FFFBEF;
+    padding: 1px 1px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #FFFBEF;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px #B19170;
+  }

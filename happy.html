@@ -34,7 +34,7 @@
         <!-- Visit a Dog uses Javascript -->
         <script>
             var currentDate = new Date();
-            var minutes = currentDate.getMinutes();
+            var seconds = currentDate.getSeconds();
             if ((minutes%2)==0){
                 document.write("<li><a class=\"active\" href=\"hungry.html\">Visit a Dog</a></li>");
             }
@@ -53,11 +53,26 @@
         <img class = "square" src = "images/happy_dog.png" width = "250">
     </div>
 
+    <script>
+        function updateDog(){
+            var currentDate = new Date();
+            var seconds = currentDate.getSeconds();
+            if ((seconds%2)==0){
+                location.href = "happy.html";
+            }
+            else{
+                location.href = "hungry.html";
+            }
+        }
+    </script>
+
     <div align = "center" class = "buttons">
         <span class = "sharing">I'm full.</u> </span>
         <br>
-        <span class = "sharing">Link to share:&nbsp</span>
-        <a class = "sharing" href = "index.html"><u>PawsTogether02</u></a>
+        <span class = "sharing">Paw Code:&nbsp</span>
+        <a class = "sharing" href = "index.html"><u>Paws02</u></a>
+        <input class="pinkbutton" type="button"
+            onclick="updateDog()" value="Update">
     </div>
 
 </body>
