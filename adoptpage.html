@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="adoptpage.css">
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="adoptpage.css">
+    <!--<script> src="index.js" </script>-->
+
+    <!-- Font: Baloo 2 -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
-    <title>Adopt a Dog</title>
+
+    <title>PawsTogether</title>
 </head>
+
 <body>
-    <p align = "right">Create Account or Sign In</p>
-    <div align = "center">
+    <!-- Top Right Buttons -->
+    <a class="topright" href="createanaccount.html"><u>Create Account</u></a>
+    <span class="topright">&nbspor&nbsp</span>
+    <a class="topright" href="signin.html"><u>Sign In</u></a>
+
+    <div align="left">
         <img src = "images/logo_pawstogether.png" width = "700">
     </div>
 
+    <!-- Navigation Bar -->
     <div align = "center">
     <ul class = "topnav">
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#adoptadog">Adopt a Dog</a></li>
-        <li><a href="#visitadog">Visit a Dog</a></li>
-        <li><a href="#about">About</a></li>
+        <!-- Home and Adopt a Dog -->
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="adoptpage.html">Adopt a Dog</a></li>
+
+        <!-- Visit a Dog uses Javascript -->
+        <script>
+            if (1!=1){
+                document.write("<li><a href=\"hungry.html\">Visit a Dog</a></li>");
+            }
+            else{
+                document.write("<li><a href=\"happy.html\">Visit a Dog</a></li>");
+            }
+        </script>
+
+        <!-- About -->
+        <li><a href="aboutpage.html">About</a></li>
     </ul>
     </div>
 
