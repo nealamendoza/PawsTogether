@@ -51,7 +51,7 @@ li a:hover {
 
 
 .adopt1{
- width: 30%;
+ width: fit-content;
  margin: auto;
 }
 
@@ -83,7 +83,7 @@ h1{
 
 .circle {
   border-radius: 50%;
-  border: 3px solid #B19170;
+  border: 5px solid #B19170;
 }
 
 .buttons{
