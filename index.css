@@ -18,6 +18,10 @@ p{
   color: #A4C7A2;
 }
 
+a:hover {
+  color: #A4C7A2;
+}
+
 body{
     background-image: url("images/bg.png");
 }
@@ -56,36 +60,36 @@ li a:hover {
   color: #F1EBD9;
 }
 
-  .welcome{
-    background-color: #FFFBEF;
-    border: 5px solid #B19170;
-    font-family: 'Baloo 2', cursive;
-    color: #B19170;
-    font-size: 25px;
-    width: 50%;
-    border-radius: 25px;
-    /*align: center;*/
-    margin: auto;
-    }
-    
-    .welcome1{
-    width: fit-content;
-    margin: auto;
-    }
-    
-    h1{
-      background-color: #CDEFE8;
-      font-size: 70px;
-      font-family: 'Baloo 2', cursive;
-      color: #B19170;
-      text-shadow: 2px 2px #F1EBD9;
-      -webkit-text-stroke-width: 3px;
-      -webkit-text-stroke-color: #F1EBD9;
-      margin-top:5px;
-      margin-bottom:5px;
-      text-align: center;
-      width: fit-content;
-    }
+.welcome{
+  background-color: #FFFBEF;
+  border: 5px solid #B19170;
+  font-family: 'Baloo 2', cursive;
+  color: #B19170;
+  font-size: 25px;
+  width: 50%;
+  border-radius: 25px;
+  /*align: center;*/
+  margin: auto;
+}
+
+.welcome1{
+  width: fit-content;
+  margin: auto;
+}
+
+h1{
+  background-color: #CDEFE8;
+  font-size: 70px;
+  font-family: 'Baloo 2', cursive;
+  color: #B19170;
+  text-shadow: 2px 2px #F1EBD9;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #F1EBD9;
+  margin-top:5px;
+  margin-bottom:5px;
+  text-align: center;
+  width: fit-content;
+}
 
 .buttons{
   background-color: #CDEFE8;

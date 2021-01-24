@@ -56,18 +56,32 @@
         <table>
             <tr>
                 <td><img src = "images/corgi_happy.png" width = "200"></td>
-                <td><h3>Create an account <br> or visit a friend’s dog <br> by entering their Share Code!</h3></td>
+                <td><h3><a href="createanaccount.html">Create an account</a>
+                <br> or visit a friend’s dog <br> by entering their Share Code!</h3></td>
             </tr>
         </table>
     </div>
 
+    <script>
+        function redirectFromCode(){
+            var code = document.getElementById("link").value;
+            var key = code.charAt(13);
+            alert(key);
+            if((key%2==0)){
+                location.href = "happy.html";
+            }
+            else{
+                location.href = "hungry.html";
+            }
+        }
+    </script>
+
     <!-- Buttons -->
     <div align="center" class = "buttons">
-        <!--<label for="link">Link to visit a dog:</label>-->
         <input type="text" id="link" name="link"
             placeholder="Enter a Share Code...">
-        <input type="button" class="pinkbutton" value="Enter">
-        <!--<button class = "pinkbutton" type="button">Enter</button>-->
+        <input type="submit" class="pinkbutton" value="Enter"
+            onClick="redirectFromCode()">
     </div>
 </body>
 </html>
